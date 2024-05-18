@@ -1,0 +1,78 @@
+/* External CSS */
+
+/* CSS SELECTOR */
+
+/* Element selector */
+body {
+  margin: 0;
+}
+/* Class selector */
+.class-selector {
+  color: blue;
+}
+/* Id selector */
+#id-selector {
+  background-color: bisque;
+}
+/* Attribute selector */
+li[draggable] {
+  color: green;
+}
+
+/*  */
+h1,
+h2,
+h3,
+h4 {
+  font-family: rubik, serif;
+}
+p,
+li,
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#coding-img {
+  height: 300px;
+  width: 500px;
+}
+
+#file-path-img {
+  float: right;
+}
+
+.top-heading {
+  background-color: #1e2022;
+  padding: 20px 5px;
+  text-align: center;
+  color: #f0f5f9;
+  margin: 0;
+}
+.main-heading {
+  background-color: #1e2022;
+  text-align: center;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  color: #f0f5f9;
+  padding: 20px 0px 20px 0px;
+}
+.side-heading {
+  text-align: left;
+}
+code {
+  border-radius: .25rem;
+  background-color: #dddddd;
+  padding: 0.125rem 0.25rem;
+}
+.code-block code{
+  background-color: #1e2022;
+  color: whitesmoke;
+  border-radius: .50rem;
+  display:block;
+  width: 50%;
+}
