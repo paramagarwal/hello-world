@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="../src/styles/basic-style.css" />
+
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Fundamentals</title>
+  </head>
+  <body>
+    <h1 class="top-heading">Basic HTML and CSS</h1>
+
+    <div id="base">
+      <div>
+        <h2 class="main-heading">File Path</h2>
+
+        <div class="card">
+          <a href="www.excalidraw.com"
+            ><img
+              id="file-path-img"
+              src="../src/assets/images/file-path.png"
+              alt="image of a file path"
+          /></a>
+
+          <p>Their are two types of file path</p>
+          <ol>
+            <li>Absolute</li>
+            <li>Relative</li>
+          </ol>
+
+          <h3>Absolute File Path</h3>
+          <p>
+            It's a file path that is relative to the root of the computer.
+            <br />
+          </p>
+          <h3>Example:</h3>
+          <ul>
+            <li>C Drive in Windows</li>
+            <li>Macintosh HD in Mac</li>
+          </ul>
+          <h3>Relative File Path</h3>
+          <p>A relative file path is relative to something.</p>
+          <h3>Special Characters</h3>
+          <p>
+            Here Relative File path is used where, it is relative to index.html
+          </p>
+          <ul>
+            <li>../essay.docx</li>
+            <li>./dog.png</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="clear: right">
+        <h2 class="main-heading">CSS</h2>
+
+        <div class="card">
+          <!-- Generally people put Internal CSS in <head> element -->
+          <style>
+            /* Internal CSS */
+          </style>
+
+          <h3 class="side-heading">How to add CSS?</h3>
+          <p>Their are three ways to add CSS:</p>
+
+          <ol>
+            <!-- Inline CSS -->
+            <li style="background-color: yellow">Inline</li>
+            <li>Internal</li>
+            <li>External</li>
+          </ol>
+
+          <h3>Selector</h3>
+          <p>Some CSS selectors are as followed:</p>
+
+          <ul>
+            <li>Element Selector</li>
+            <li class="class-selector">Class Selector</li>
+            <li id="id-selector">Id Selector</li>
+            <li draggable="true">Attribute Selector</li>
+            <li>Universal Selector</li>
+          </ul>
+
+          <h4>Class VS Id</h4>
+          <p>
+            Class: It can have same name and henced used in many elements.
+            <br />
+            Id: It should be unique and applied to only one element in single
+            HTML file.
+          </p>
+          <h3>Fonts</h3>
+          <h4>Font Size</h4>
+          <ol>
+            <li>1px (1/96th inch)</li>
+            <li>1pt (1/72nd inch)</li>
+            <li>1em (100% of parent)</li>
+            <li>1rem (100% of root)</li>
+          </ol>
+          <h4>Font Weight</h4>
+          <ul>
+            <li>Keyword (normal bold)</li>
+            <li>Relative to Parent (lighter, bolder)</li>
+            <li>Number (100 - 900)</li>
+          </ul>
+          <h4>Font Family</h4>
+          <a href="https://fonts.google.com/">Google Fonts</a>
+
+          <h3>Box Model</h3>
+          <img src="../src/assets/images/box-model.png" alt="box Model" />
+          <h4>Border</h4>
+          <img src="../src/assets/images/border-syntax.png" alt="" />
+          <p>
+            Note: The height and the width of the element box does not change.
+          </p>
+          <div class="code-box">
+            <code>border-width: 0px 20px 30px 40px</code>
+          </div>
+          <p>top right bottom left</p>
+
+          <h3>Cascade</h3>
+          <img src="../src/assets/images/cascade.png" alt="" />
+
+          <h3>CSS Selector</h3>
+          <ul>
+            <li>Child</li>
+            <code>selector > selector { color: firebrick; } </code>
+            <li>Descendant</li>
+            <code>selector selector {color: blue;}</code>
+            <li>Chaining</li>
+            <code>selectorselector {color: seagreen;}</code>
+            <li>Combining Combiners</li>
+            <code>selector selectorselector{font-size: 0.5rem}</code>
+          </ul>
+
+          <h3>Positioning</h3>
+          <h4>Static Positioning</h4>
+          <p>HTML default flow</p>
+          <h4>Relative Positioning</h4>
+          <p>Position relative to default position</p>
+          <h4>Absolute Positioning</h4>
+          <p>
+            Position relative to nearest positioned ancestor or top left corner
+            of the webpage
+          </p>
+          <h4>Fixed Positioning</h4>
+          <p>Position relative to top left corner of browser window</p>
+
+          <h3>Display Property</h3>
+          <p>Their are basically 3 types of display properties:</p>
+          <ul>
+            <li>
+              block:
+              <p>
+                It takes up the entire full width. Now, this means that if you
+                have another element, then it's going below it, not on the same
+                line.
+              </p>
+            </li>
+            <li>
+              inline:
+              <p>
+                If we have one element, then add another element, then it's
+                going to go on the same line until it fit the width of the
+                webpage. You can't set the size of the element.
+              </p>
+            </li>
+            <li>
+              inline-block:
+              <p>
+                It allows us to set the size of the element and the elements go
+                on the same line.
+              </p>
+            </li>
+            <li>
+              none:
+              <p>It hides the element from the webpage.</p>
+            </li>
+          </ul>
+
+          <h3>Responsive Website</h3>
+          <p>Their are four main ways to achieve a responsive website:</p>
+          <ol>
+            <li>Media Queires</li>
+            <li>CSS Grid</li>
+            <li>CSS Flexbox</li>
+            <li>External Frameworks e.g. Bootstrap</li>
+          </ol>
+
+          <h4>Media Queries</h4>
+          <code
+            >@media (max-width: 600px){ /* CSS for screens below or equal to
+            600px wide*/ }
+          </code>
+
+          <h4>CSS Grid</h4>
+          <pre class="code-block">
+            <code>
+            div class="grid-container"
+            div class="first card" /div 
+            div class="card" /div 
+            div class="card" /div 
+            div class="card" /div 
+            div class="card" /div 
+            /div
+          </code>
+          </pre>
+
+          <h4>CSS Flexbox</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
